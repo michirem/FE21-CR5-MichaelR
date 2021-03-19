@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Newsreader&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Noto+Sans+JP:wght@300&family=Ruthie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: black solid 0.5px;
+}
+
+body {
+  background-color: #56cbf9ff;
+  font-family: 'Newsreader', serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.button {
+  padding: 10px 20px 10px 20px;
+  border-radius: 45px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+  border: 3px white solid;
+  background-color: #56cbf9ff;
+}
+
+.button:hover {
+  background-color: #eac5d8ff;
+  color: white;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.button:hover a {
+  color: white;
+}
+
+.logo {
+  font-family: 'Kaushan Script', cursive;
+  height: 100%;
+  color: white;
+}
+
+.logo h1 {
+  font-size: 48pt;
+  letter-spacing: 8px;
+  padding-top: 2%;
+}
+
+.logo h1 b {
+  color: #eac5d8ff;
+}
+
+.navstandard ul, .navmobile ul {
+  margin-top: 4%;
+  width: 100%;
+  height: 60px;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .logo h1 {
+    height: 70px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+  .logo h1 {
+    height: 160px;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .logo h1 {
+    height: 70px;
+  }
+}
+
+section div {
+  height: 220px;
+}
+
+.swiper-container {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.swiper-slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  width: 100%;
+  position: absolute;
+  top: -30%;
+  left: 0%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color: transparent;
+  height: 100%;
+  width: 20%;
+  top: 5%;
+}
+
+.cards {
+  width: 100%;
+}
+
+address {
+  margin-bottom: 70px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,151 @@
+// font import and base styling elements
+
+$vivid-sky-blue: #56cbf9ff;
+$queen-pink: #eac5d8ff;
+$dark-cornflower-blue: #1a3e75ff;
+
+// General font
+@import url('https://fonts.googleapis.com/css2?family=Newsreader&display=swap');
+// logo font
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Noto+Sans+JP:wght@300&family=Ruthie&display=swap');
+// button font
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+// global styling
+// reset margin & padding
+* {
+    margin: 0;
+    padding: 0;
+    border: black solid 0.5px;
+}
+
+body {
+    background-color: $vivid-sky-blue;
+    font-family: 'Newsreader', serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+// button styling with media query for adaptive button width
+
+.button {
+    padding: 10px 20px 10px 20px;
+    border-radius: 45px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    border: 3px white solid;
+    background-color: $vivid-sky-blue;
+    }
+  
+  .button:hover {
+    background-color: $queen-pink;
+    color: white;
+    transform: translateY(-3px);
+    a{
+        color: white;
+    }
+  }
+
+// header styling with media query for adaptive logo
+
+.logo {
+    font-family: 'Kaushan Script', cursive;
+    height: 100%;
+    color: white;
+    h1{
+        font-size: 48pt;
+        letter-spacing: 8px;
+
+        padding-top: 2%;
+        b {
+            color: $queen-pink;
+        }
+    }
+}
+
+.navstandard, .navmobile {
+    ul {
+        margin-top: 4%;
+        width: 100%;
+        height: 60px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .logo {
+        h1{
+            height: 70px; //used px to keep the logo design constant
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1000px){
+    .logo {
+        h1{
+            height: 160px; //used px to keep the logo design constant
+        }
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    .logo {
+        h1{
+            height: 70px; //used px to keep the logo design constant
+        }
+    }
+}
+
+//hero section styling
+
+section {
+    div {
+        height: 220px;
+    }
+}
+
+.swiper-container {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+  
+.swiper-slide {
+      position: relative;
+      overflow: hidden;
+}
+
+.swiper-slide img {
+    width: 100%;
+    position: absolute;
+    top: -30%;
+    left: 0%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    color: transparent;
+    height: 100%;
+    width: 20%;
+    top: 5%;
+}
+
+//main styling
+
+.cards {
+    width: 100%;
+}
+
+//footer styling
+
+address {
+    margin-bottom: 70px;
+}
