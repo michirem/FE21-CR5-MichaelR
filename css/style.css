@@ -4,12 +4,11 @@
 * {
   margin: 0;
   padding: 0;
-  border: black solid 0.5px;
 }
 
 body {
   background-color: #56cbf9ff;
-  font-family: 'Newsreader', serif;
+  font-family: 'Bebas Neue', cursive;
 }
 
 li {
@@ -41,10 +40,6 @@ a {
           transform: translateY(-3px);
 }
 
-.button:hover a {
-  color: white;
-}
-
 .logo {
   font-family: 'Kaushan Script', cursive;
   height: 100%;
@@ -61,49 +56,55 @@ a {
   color: #eac5d8ff;
 }
 
-.navstandard ul, .navmobile ul {
+.navstandard ul {
   margin-top: 4%;
   width: 100%;
   height: 60px;
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .logo h1 {
     height: 70px;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1000px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .logo h1 {
     height: 160px;
   }
+  #footlogo h1 {
+    height: 70px;
+  }
 }
 
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 992px) {
   .logo h1 {
     height: 70px;
+  }
+  #footlogo h1 {
+    height: 80px;
   }
 }
 
 section div {
-  height: 220px;
+  height: 300px;
 }
 
 .swiper-container {
-  width: 100%;
   margin-bottom: 30px;
 }
 
 .swiper-slide {
   position: relative;
   overflow: hidden;
+  border-radius: 5px;
 }
 
 .swiper-slide img {
-  width: 100%;
+  width: 800px;
   position: absolute;
-  top: -30%;
-  left: 0%;
+  top: -40%;
+  left: -80%;
 }
 
 .swiper-button-prev, .swiper-button-next {
@@ -113,11 +114,52 @@ section div {
   top: 5%;
 }
 
-.cards {
-  width: 100%;
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  section div {
+    height: 300px;
+  }
+  .swiper-slide img {
+    width: 700px;
+    top: -40%;
+    left: -20%;
+  }
 }
 
-address {
-  margin-bottom: 70px;
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  section div {
+    height: 440px;
+  }
+  .swiper-slide img {
+    width: 1100px;
+    top: -30%;
+    left: -40%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  section div {
+    width: 100%;
+    height: 440px;
+  }
+  .swiper-slide img {
+    width: 100%;
+    top: -20%;
+    left: 0%;
+  }
+}
+
+.card {
+  overflow: hidden;
+}
+
+.card img {
+  width: 150%;
+  position: relative;
+  top: 0%;
+  left: -20%;
+}
+
+.card p {
+  margin-top: 0;
 }
 /*# sourceMappingURL=style.css.map */
