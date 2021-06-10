@@ -1,7 +1,7 @@
 # FE21-CR5-MichaelR
 
 The following criteria were graded:
-- Create a GitHub Repository named: FE21-CR5-YourName. Push the files into it and send the link through the learning management system (lms). Add codefactorygit as a collaborator and assure your repository is set to private. See an example of a GitHub link below:
+- Create a GitHub Repository named: FE21-CR5-YourName. Push the files into it and send the link through the learning management system (lms). Add a collaborator and assure your repository is set to private. See an example of a GitHub link below:
 https://github.com/JohnDoe/repositoryname.git
 - create the class Locations based on the specifications.
 - create at least 2 Locations objects by invoking a constructor call and save them in an array (class constructors usage is mandatory, do NOT use JSON and parsing).
